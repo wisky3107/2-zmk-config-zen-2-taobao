@@ -50,10 +50,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp Q             &kp W           &kp E  &kp R             &kp T      &kp TAB        &kp BSPC     &kp Y            &kp U     &kp I      &kp O                 &kp P
-&kp A             &kp S           &kp D  &kp F             &kp G      &kp LCTRL      &kp SQT      &kp H            &kp J     &kp K      &kp L                 &kp SEMI
-&mt LEFT_SHIFT Z  &mt LEFT_ALT X  &kp C  &kp V             &kp B      &td0           &kp ESC      &kp N            &kp M     &kp COMMA  &mt RIGHT_ALT PERIOD  &mt RIGHT_SHIFT FSLH
-                                         &mt LCTRL ESCAPE  &lt 1 TAB  &lt 3 ENTER    &lt 4 SPACE  &lt 2 BACKSPACE  &kp RALT
+&kp Q             &kp W  &kp E  &kp R             &kp T      &kp TAB        &kp BSPC     &kp Y            &kp U     &kp I      &kp O                 &kp P
+&kp A             &kp S  &kp D  &kp F             &kp G      &kp LCTRL      &kp SQT      &kp H            &kp J     &kp K      &kp L                 &kp SEMI
+&mt LEFT_SHIFT Z  &kp X  &kp C  &kp V             &kp B      &td0           &kp ESC      &kp N            &kp M     &kp COMMA  &mt RIGHT_ALT PERIOD  &mt RIGHT_SHIFT FSLH
+                                &mt LCTRL ESCAPE  &lt 1 TAB  &lt 3 ENTER    &lt 4 SPACE  &lt 2 BACKSPACE  &kp RALT
             >;
         };
 
@@ -96,7 +96,7 @@
             bindings = <
 &trans        &kp F7  &kp F8  &kp F9  &kp F10  &kp F5         &kp F6       &kp F7        &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS
 &kp LEFT_WIN  &kp F4  &kp F5  &kp F6  &kp F11  &bootloader    &bootloader  &kp DOT       &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS
-&trans        &kp F1  &kp F2  &kp F3  &kp F12  &trans         &trans       &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_ENTER
+&kp LEFT_ALT  &kp F1  &kp F2  &kp F3  &kp F12  &trans         &trans       &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_ENTER
                               &trans  &trans   &trans         &trans       &trans        &trans
             >;
         };
