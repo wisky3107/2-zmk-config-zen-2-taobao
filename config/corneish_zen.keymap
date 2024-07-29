@@ -45,6 +45,16 @@
             tapping-term-ms = <200>;
             flavor = "tap-preferred";
         };
+
+        mtz200ms: mtz200ms {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MTZ200MS";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+        };
     };
 
     macros {
@@ -69,10 +79,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp Q             &kp W  &kp E  &kp R             &kp T           &kp TAB             &kp BSPC          &kp Y                 &kp U     &kp I      &kp O                 &kp P
-&kp A             &kp S  &kp D  &kp F             &kp G           &kp LCTRL           &kp SQT           &kp H                 &kp J     &kp K      &kp L                 &kp SEMI
-&mt LEFT_SHIFT Z  &kp X  &kp C  &kp V             &kp B           &td0                &kp ESC           &kp N                 &kp M     &kp COMMA  &mt RIGHT_ALT PERIOD  &mt RIGHT_SHIFT FSLH
-                                &mt LCTRL ESCAPE  &lt100ms 1 TAB  &lt100ms 3 ENTER    &lt200ms 4 SPACE  &lt100ms 2 BACKSPACE  &kp RALT
+&kp Q                 &kp W                 &kp E              &kp R                   &kp T           &kp TAB             &kp BSPC          &kp Y                 &kp U                    &kp I              &kp O                  &kp P
+&mtz200ms LEFT_WIN A  &mtz200ms LEFT_ALT S  &mtz200ms LCTRL D  &mtz200ms LEFT_SHIFT F  &kp G           &kp LCTRL           &kp SQT           &kp H                 &mtz200ms RIGHT_SHIFT J  &mtz200ms RCTRL K  &mtz200ms RIGHT_ALT L  &mtz200ms RIGHT_WIN SEMICOLON
+&mt LEFT_SHIFT Z      &kp X                 &kp C              &kp V                   &kp B           &td0                &kp ESC           &kp N                 &kp M                    &kp COMMA          &mt RIGHT_ALT PERIOD   &mt RIGHT_SHIFT FSLH
+                                                               &mt LCTRL ESCAPE        &lt100ms 1 TAB  &lt100ms 3 ENTER    &lt200ms 4 SPACE  &lt100ms 2 BACKSPACE  &kp RALT
             >;
         };
 
@@ -103,10 +113,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp LEFT_BRACKET  &kp N7        &kp N8        &kp N9        &kp RIGHT_BRACKET  &kp PRCNT    &trans     &kp PIPE        &trans          &kp UP_ARROW      &trans           &trans
-&kp SEMICOLON     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp EQUAL          &none        &kp MINUS  &kp QUESTION    &kp LEFT_ARROW  &kp DOWN_ARROW    &kp RIGHT_ARROW  &kp DELETE
-&kp GRAVE         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH      &none        &kp UNDER  &kp UNDERSCORE  &kp EQUAL       &kp GREATER_THAN  &kp LEFT_BRACE   &kp RIGHT_BRACE
-                                              &trans        &trans             &kp SPACE    &kp RET    &trans          &trans
+&trans          &trans        &trans     &trans          &trans          &trans       &trans     &kp PIPE        &trans          &kp UP_ARROW      &trans           &trans
+&kp LEFT_WIN    &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &kp LEFT_SHIFT  &none        &kp MINUS  &kp QUESTION    &kp LEFT_ARROW  &kp DOWN_ARROW    &kp RIGHT_ARROW  &kp DELETE
+&kp LEFT_SHIFT  &trans        &trans     &trans          &trans          &none        &kp UNDER  &kp UNDERSCORE  &kp EQUAL       &kp GREATER_THAN  &kp LEFT_BRACE   &kp RIGHT_BRACE
+                                         &trans          &trans          &kp SPACE    &kp RET    &trans          &trans
             >;
         };
 
