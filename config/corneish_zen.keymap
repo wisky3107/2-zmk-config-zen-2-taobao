@@ -79,10 +79,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp Q                 &kp W                 &kp E              &kp R                   &kp T           &kp TAB             &kp BSPC          &kp Y                 &kp U                    &kp I              &kp O                  &kp P
-&mtz200ms LEFT_WIN A  &mtz200ms LEFT_ALT S  &mtz200ms LCTRL D  &mtz200ms LEFT_SHIFT F  &kp G           &kp LCTRL           &kp SQT           &kp H                 &mtz200ms RIGHT_SHIFT J  &mtz200ms RCTRL K  &mtz200ms RIGHT_ALT L  &mtz200ms RIGHT_WIN SEMICOLON
-&mt LEFT_SHIFT Z      &kp X                 &kp C              &kp V                   &kp B           &td0                &kp ESC           &kp N                 &kp M                    &kp COMMA          &mt RIGHT_ALT PERIOD   &mt RIGHT_SHIFT FSLH
-                                                               &mt LCTRL ESCAPE        &lt100ms 1 TAB  &lt100ms 3 ENTER    &lt200ms 4 SPACE  &lt100ms 2 BACKSPACE  &kp RALT
+&kp Q             &kp W                 &kp E              &kp R                   &kp T           &kp TAB             &kp BSPC          &kp Y                 &kp U                    &kp I              &kp O                  &kp P
+&kp A             &mtz200ms LEFT_ALT S  &mtz200ms LCTRL D  &mtz200ms LEFT_SHIFT F  &kp G           &kp LCTRL           &kp SQT           &kp H                 &mtz200ms RIGHT_SHIFT J  &mtz200ms RCTRL K  &mtz200ms RIGHT_ALT L  &kp SEMICOLON
+&mt LEFT_SHIFT Z  &kp X                 &kp C              &kp V                   &kp B           &td0                &kp ESC           &kp N                 &kp M                    &kp COMMA          &mt RIGHT_ALT PERIOD   &mt RIGHT_SHIFT FSLH
+                                                           &mt LCTRL ESCAPE        &lt100ms 1 TAB  &lt100ms 3 ENTER    &lt200ms 4 SPACE  &lt100ms 2 BACKSPACE  &kp RALT
             >;
         };
 
