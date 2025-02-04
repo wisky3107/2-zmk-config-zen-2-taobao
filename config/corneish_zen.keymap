@@ -79,7 +79,7 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&sl 5           &kp Q                   &kp W                 &kp E                     &kp R                   &kp T               &kp Y             &kp U                    &kp I              &kp O                  &kp P                 &kp C_MUTE
+&tog 5          &kp Q                   &kp W                 &kp E                     &kp R                   &kp T               &kp Y             &kp U                    &kp I              &kp O                  &kp P                 &kp C_MUTE
 &kp LS(C_NEXT)  &kp A                   &mtz200ms LEFT_ALT S  &mtz200ms LEFT_CONTROL D  &mtz200ms LEFT_SHIFT F  &kp G               &kp H             &mtz200ms RIGHT_SHIFT J  &mtz200ms RCTRL K  &mtz200ms RIGHT_ALT L  &kp SEMICOLON         &kp C_VOLUME_UP
 &kp K_PREVIOUS  &mtz200ms LEFT_SHIFT Z  &kp X                 &kp C                     &kp V                   &kp B               &kp N             &kp M                    &kp COMMA          &mt RIGHT_ALT PERIOD   &mt RIGHT_SHIFT FSLH  &kp K_VOLUME_DOWN
                                                               &mtz200ms LCTRL ESCAPE    &lt100ms 1 TAB          &lt100ms 3 ENTER    &lt200ms 3 SPACE  &lt100ms 2 BACKSPACE     &kp RALT
@@ -142,7 +142,7 @@
         layer_5 {
             display-name = "GAME";
             bindings = <
-&kp TAB     &kp Q  &kp W  &kp E     &kp R         &kp T        &kp Y      &kp U                    &kp I              &kp O                  &kp P                 &sl 0
+&kp TAB     &kp Q  &kp W  &kp E     &kp R         &kp T        &kp Y      &kp U                    &kp I              &kp O                  &kp P                 &tog 0
 &kp LSHIFT  &kp A  &kp S  &kp D     &kp F         &kp G        &kp H      &mtz200ms RIGHT_SHIFT J  &mtz200ms RCTRL K  &mtz200ms RIGHT_ALT L  &kp SEMICOLON         &lt 4 RIGHT_WIN
 &kp LCTRL   &kp Z  &kp X  &kp C     &kp V         &kp B        &kp N      &kp M                    &kp COMMA          &mt RIGHT_ALT PERIOD   &mt RIGHT_SHIFT FSLH  &kp ESC
                           &kp LGUI  &kp LEFT_ALT  &kp SPACE    &kp SPACE  &lt100ms 2 BACKSPACE     &kp RALT
